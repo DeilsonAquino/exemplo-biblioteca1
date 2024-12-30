@@ -1,0 +1,102 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Cadastro de Clientes</title>
+
+<style>
+
+body{
+
+    font-family: Arial, sans-serif;
+    color:rgb(140, 142, 162);
+    background-color: #e7e9ed;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+fieldset {
+
+    background-color: #fff;
+    width: 25%;
+    border: 3px solid #4fc572;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+label {
+
+    justify-content: center;
+    display: flex;
+    font-size: 30px;
+
+}
+
+b{
+    
+    justify-content: center;
+    display: flex;
+    font-size: 16;
+
+}
+
+
+
+input[type="text"]{
+
+            width: 90%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+
+}
+
+input[type="submit"]{
+
+            
+             
+            border: none; 
+            width: 90%;
+            padding: 8px;
+            border-radius: 5px;
+            font-size: 18px;
+
+
+}
+
+input[type="submit"]:hover{
+    background-color: #4fc572;
+    cursor: pointer;
+}
+
+</style>
+
+
+
+
+</head> 
+<body>
+
+    <fieldset>
+        <label><strong>Cadastrar Clientes</strong></label>
+   <hr>
+    
+<form action="cadastrarCliente.php" method="POST">
+<b>Digite CPF do Cliente:</b>
+<input type="text" name="cpf" size="15"><br><br>
+<b>Digite Nome do Cliente:</b>
+<input type="text" name="nome" size="15"><br><br>
+
+<b>Digite Sobrenome do Cliente:</b>
+<input type="text" name="sobrenome" size="15"><br><br>
+<b>Digite Telefone:</b>
+<input type="text" name="telefone" size="15" placeholder="Digite desta forma telefone do cliente: (21) 0000-0000"><br><BR><br>
+<input type="submit" name="cadastrar" value="CADASTRAR">
+</form>
+
+</fieldset>
+</body>
+
+</html>
